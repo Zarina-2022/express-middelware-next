@@ -29,27 +29,4 @@ exports.controlMiddleware = (req, res, next) => {
 
 
 
-/*
-
-const fs = require('fs');
-
-exports.loggerMiddleware = (req,res,next)=>{
-  next()
-}
-
-let tours = JSON.parse(
-  fs.readFileSync(`${__dirname}/../dev-data/data/tours-simple.json`)
-);
-
-exports.controlMiddleware = (req, res, next) => {
-  const found = tours.find((item) => item.id === req.params.id);
-  if (!found)
-    return next(res.status(404).json({ status: "Gönderdiğiniz id'ye sahip bir tur bulunamadı" }))
-  req.tour = found;
-  next();
-};
-
-*/
-
-
 
